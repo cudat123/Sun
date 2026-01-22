@@ -10,7 +10,7 @@ async function getSunFull() {
     const data = await res.json();
 
     return {
-      id : "@tiendataox"
+      id : "@tiendataox",
       // ===== PHIÊN =====
       phien_hien_tai: data.phien_dudoan, // đổi tên
       phien: data.phien,
