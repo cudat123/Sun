@@ -10,17 +10,18 @@ async function getSunFull() {
     const data = await res.json();
 
     return {
+      id : "@tiendataox"
       // ===== PHIÊN =====
       phien_hien_tai: data.phien_dudoan, // đổi tên
-      phien_truoc: data.phien,
+      phien: data.phien,
 
       // ===== DỰ ĐOÁN =====
       du_doan: data.du_doan_van_sau, // đổi tên
-      ket_qua_hien_tai: data.ket_qua_hien_tai,
+      ket_qua: data.ket_qua_hien_tai,
       do_tin_cay: data.do_tin_cay,
 
       // ===== CẦU =====
-      cau_truc_cau: data.cau_truc_cau,
+      cau: data.cau_truc_cau,
 
       // ===== PATTERN =====
       pattern_full: data.pattern_full,
@@ -36,14 +37,11 @@ async function getSunFull() {
       // ===== THỐNG KÊ =====
       thong_ke: data.thong_ke,
 
-      // ===== HỆ THỐNG =====
-      he_thong: data.he_thong,
-      model_info: data.model_info,
+      // ===== HỆ THỐNG 
       tinh_nang: data.tinh_nang,
       ty_le_thanh_cong: data.ty_le_thanh_cong,
 
       // ===== META =====
-      id: "@tiendataox"
     };
   } catch (err) {
     return { error: "Sun API lỗi hoặc die", detail: err.toString() };
