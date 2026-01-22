@@ -43,7 +43,7 @@ async function getSunFull() {
       ty_le_thanh_cong: data.ty_le_thanh_cong,
 
       // ===== META =====
-      id: @tiendataox
+      id: "@tiendataox"
     };
   } catch (err) {
     return { error: "Sun API lỗi hoặc die", detail: err.toString() };
@@ -70,5 +70,5 @@ const server = http.createServer(async (req, res) => {
 // ===== START SERVER =====
 const PORT = 3000;
 server.listen(PORT, () => {
-  console.log(`✅ Server chạy: http://localhost:${PORT}/api/sun`);
+  console.log(`✅ Server chạy: http://localhost:${PORT}/api/sundaicho`);
 });
