@@ -23,8 +23,6 @@ async function getSunFull() {
       // ===== CẦU =====
       cau: data.cau_truc_cau,
 
-      // ===== PATTERN =====
-      pattern_full: data.pattern_full,
       pattern_length: data.pattern_length,
       pattern_recent_20: data.pattern_recent_20,
       pattern_recent_50: data.pattern_recent_50,
@@ -35,10 +33,9 @@ async function getSunFull() {
       giai_thich_chi_tiet: data.giai_thich_chi_tiet,
 
       // ===== THỐNG KÊ =====
-      thong_ke: data.thong_ke,
 
       // ===== HỆ THỐNG 
-      tinh_nang: data.tinh_nang,
+  
       ty_le_thanh_cong: data.ty_le_thanh_cong,
 
       // ===== META =====
