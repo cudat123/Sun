@@ -22,7 +22,7 @@ fastify.addHook("onRequest", async (request, reply) => {
   if (request.url.startsWith("/api/sunwin") || request.url.startsWith("/api/history-json")) {
     const urlKey = request.query.key;
     if (!urlKey || urlKey !== API_KEY) {
-      return reply.code(403).send({ error: "Key sai mẹ rồi, liên hệ tele: @mrtinhios" });
+      return reply.code(403).send({ error: "đéo có key mà đòi đớp của bố mày à có tiền mua thì ib @tiendataox" });
     }
   }
 });
