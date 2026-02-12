@@ -1,5 +1,5 @@
 {
-  "name": "apisun-server",
+  "name": "sun-api",
   "version": "1.0.0",
   "main": "apisun.js",
   "scripts": {
