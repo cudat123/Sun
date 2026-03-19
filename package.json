@@ -1,16 +1,38 @@
 {
-  "name": "ngonlam-api",
-  "version": "1.0.0",
-  "description": "Proxy API đổi key JSON",
-  "main": "index.js",
-  "type": "commonjs",
+  "name": "taixiu-analyzer",
+  "version": "2.0.0",
+  "description": "Tool phân tích và dự đoán Tài Xỉu với 84 models thông minh",
+  "main": "apisun.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node apisun.js",
+    "dev": "nodemon apisun.js",
+    "pm2": "pm2 start apisun.js --name taixiu-analyzer",
+    "pm2-stop": "pm2 stop taixiu-analyzer",
+    "pm2-restart": "pm2 restart taixiu-analyzer",
+    "pm2-logs": "pm2 logs taixiu-analyzer",
+    "pm2-monit": "pm2 monit"
   },
-  "author": "Dat Tien",
+  "keywords": [
+    "taixiu",
+    "sicbo",
+    "prediction",
+    "analyzer",
+    "websocket",
+    "express",
+    "machine-learning"
+  ],
+  "author": "@tiendataox",
   "license": "MIT",
   "dependencies": {
-    "axios": "^1.6.0",
-    "express": "^4.18.2"
+    "ws": "^8.14.2",
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
   }
 }
